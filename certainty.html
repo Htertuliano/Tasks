@@ -9,26 +9,26 @@
 		<body class="fullPage">
 				<div class="container">
 				<header class"name">
-						<h1 id="heading">task-taker</h1>
+						<h1 id="heading">tasks</h1>
 						<form>
 								<div class="inputs">
-								<button id="listAdd" onclick="handlers.addItem()" type="button">Add Item</button>
+								<button id="listAdd" onclick="handler.addItem()" type="button">Add Item</button>
 								<input id="add" type="text" placeholder="add a new list item">
 								</div>
 
 								<div class="inputs">
-								<button id="listRemove" onclick="handlers.deleteItem()">Remove Item</button>
+								<button id="listRemove" onclick="handler.deleteItem()">Remove Item</button>
 								<input id="deletePosition" type="number" placeholder='Item #'>
 								</div>
 
 								<div class="inputs">
-								<button id="listChange" onclick="handlers.changeItem()">Change Item</button>
+								<button id="listChange" onclick="handler.changeItem()">Change Item</button>
 								<input id="changePosition" type="number" placeholder='Item #'>
 								<input id="nameChange" type="text" placeholder="change an item here">
 								</div>
 								
 								<div class="inputs">
-								<button id="toggleAll" onclick="handlers.toggleAll()">Toggle All</button>
+								<button id="toggleAll" onclick="handler.toggleAll()">Toggle All</button>
 								<input id="toggleAllPosition" type="number" placeholder="Item #">		
 								</div>
 
@@ -36,7 +36,7 @@
 				</header>
 				</div>
 					<div class="viewing">
-						<ul> </ul>
+							<ul><li></li> </ul>
 				</div>
 
 						<div class="details">	
