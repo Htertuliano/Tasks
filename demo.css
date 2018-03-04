@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "Din Light";
+	src: local(Din Light);
+}
+
+body {
+	background-color: #262322;
+	}
+
+.header {
+	text-align: center;
+	font-family: "Din Light", Helvetica, sans-serif;
+	color:darksalmon;
+	}
+
+.info	{
+	font-family: "Din Light", Helvetica, sans-serif;
+	color: darksalmon;
+	word-wrap: break-word;
+	width: 400px;
+	margin: 400px 0px 0px 0px;
+	}
+
+	

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, intial-scale=1">
+			<title>Todos</title>
+			<link rel="stylesheet" href="todo.css" type="text/css">		
+		</head>
+		<body class="fullPage">
+				<div class="container">
+				<header class"name">
+						<h1 id="heading">task-taker</h1>
+						<form>
+								<div class="inputs">
+								<button id="listAdd" onclick="handlers.addItem()" type="button">Add Item</button>
+								<input id="add" type="text" placeholder="add a new list item">
+								</div>
+
+								<div class="inputs">
+								<button id="listRemove" onclick="handlers.deleteItem()">Remove Item</button>
+								<input id="deletePosition" type="number" placeholder='Item #'>
+								</div>
+
+								<div class="inputs">
+								<button id="listChange" onclick="handlers.changeItem()">Change Item</button>
+								<input id="changePosition" type="number" placeholder='Item #'>
+								<input id="nameChange" type="text" placeholder="change an item here">
+								</div>
+								
+								<div class="inputs">
+								<button id="toggleAll" onclick="handlers.toggleAll()">Toggle All</button>
+								<input id="toggleAllPosition" type="number" placeholder="Item #">		
+								</div>
+
+						</form>
+				</header>
+				</div>
+					<div class="viewing">
+						<ul> </ul>
+				</div>
+
+						<div class="details">	
+								<section class="information"><br></br><br><br><br></br><br></br><br>
+						<p>This site was created using Watch and Code&trade; and styled using HTML5/CSS3 and
+						Javascript. A list array stores the item name as well as its position and toggling whether 
+						or not the action has been completed. The app is using JQuery Listeners in order to</p>
+						<ol>
+								<li>Display the List</li>
+								<li>Add Items</li>
+								<li>Remove Items</li>
+								<li>Change Items</li>
+								<li>Select All Items</li>
+						</ol>
+						<p>Hopefully I will be able to get this layout looking nice. For any questions or comments please take a look at the Source Code</p>
+											</section>
+				 <br></br><br><br><br></br><br></br><br></article>
+						</div>
+				<footer class="footy">
+						<span>Haqq Tertuliano // March 3<sup>rd</sup>, 2018 // HACKFSU&copy;</span>
+				</footer>
+
+			<script src="toDoList.js"></script>
+		</body>
+
+
+</html>
+

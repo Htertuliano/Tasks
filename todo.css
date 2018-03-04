@@ -1,0 +1,221 @@
+@font-face {
+	font-family: "Futura BQ";
+	src: local(Futura BQ);
+	}
+
+.fullPage {
+	background: linear-gradient(to left,#ddcecd,#f06e6d);
+	}
+
+.container {
+	position: absolute;
+	left: 300px;
+	}
+
+#listBegin {
+	margin: 15px;
+	display: block;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	width: 600px;
+        height: 45px;
+	}
+
+#add {
+	position: relative;
+	left: 18px;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	}
+
+#listAdd {
+	position: relative;
+	left: 15px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	width: 290px;
+        height: 40px;
+	}
+
+#deletePosition {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 18px;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	}
+
+#listRemove {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 15px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	width: 290px;
+        height: 40px;
+	}
+
+#changePosition {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 28px;
+	width: 100px;
+	height: 35px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	}
+
+#nameChange {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 42px;
+	width: 230px;
+	height: 35px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	}
+
+
+#listChange {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 15px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	width: 230px;
+        height: 40px;
+	}
+
+#toggleAllPosition {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 18px;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	}
+
+#viewing {
+	position: relative;
+	left; 200px;
+	text-align: center;
+}
+
+
+#toggleAll {
+	margin: 10px 0px 0px 0px;
+	position: relative;
+	left: 15px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 2px gray;
+	opacity: 0.7;
+	width: 290px;
+        height: 40px;
+	}
+
+		
+#heading {
+	color: #2c7c80;
+	text-align: center;
+	opacity: 0.85;
+	font-size: 62pt;
+	font-style: italic;
+	font-variant: small-caps;
+	font-family: "Futura BQ";
+	}	
+	
+@font-face {
+	font-family: "Din Light";
+	src: local( Din Light );
+	}
+
+.details {
+	postion: fixed;
+	float: left;
+	right: 20px;
+	}
+
+.information {	
+	position: fixed;
+	float: right;
+	bottom: 40px;
+	top: 45px;
+	right: 30px;
+	width: 30%;
+	font-family: "Din Light", sans serif;
+	word-wrap: break-word;
+	background-color: #2c7c80;
+	color: #f3807f;
+	padding: 10px;
+	word-wrap: break-word;	
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	border-radius: 5px;
+	}
+
+.footy {
+	position: fixed;
+	bottom: 0;
+	left: 30px;
+	text-align: center;
+	color: black;
+	font-family: "Din Light";
+	font-size: 14pt;
+	ifont-weight: bold.
+	}
+
