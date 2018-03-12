@@ -22,8 +22,8 @@ var toDoList = {
 							});
 				this.displayList();
 		},
-		changeitem: function(position, newItem) {
-				this.list[position].itemName = newitem;
+		changeItem: function(position, newItem) {
+				this.list[position].itemName = newItem;
 				this.displayList();
 		},
 		deleteItem: function(position) {
@@ -54,32 +54,43 @@ var toDoList = {
 					}		
 				     }		
 				this.displayList();
-		}
+		},
 }
 
-var handlers = {
+var handler = {
 	addItem: function() { var itemInput = document.getElementById("add").value;
 			toDoList.addItem(itemInput);
 			document.getElementById("add").value = '';
 			view.displayList();
+			return false; 	
 			},
 	deleteItem: function() { var itemPosition = document.getElementById("deletePosition").valueAsNumber;
 			toDoList.deleteItem(itemPosition);
 			document.getElementById("deletePosition").value = '';
 			view.displayList();
+				return false; 
 			},
 	changeItem : function() { var itemPosition = document.getElementById("changePosition").valueAsNumber;
 				var newName = document.getElementById("nameChange").value;
-				toDolist.changeItem(itemPosition, newName);
+				toDoList.changeItem(itemPosition, newName);
 				document.getElementById("changePosition").value = '';
 				document.getElementById("nameChange").value = '';
-				view.displayList();	
+				view.displayList();
+				return false; 
 				},
-	toggleAll : function() { var togglePosition = document.getElementById("toggleAllPosition").valueAsNumber;
-			toDoList.toggleAll(togglePosition);
-			document.getElementById("togglePosition");
-		view.displayList();
-	}
+	toggleCompleted : function() { var togglePosition = document.getElementById("toggleCompletedPosition").valueAsNumber;
+			if (togglePosition) {
+			toDoList.toggleCompleted(togglePosition);
+			document.getElementById("toggleCompletedPosition").value = '';
+			view.displayList();
+			}
+			else { }
+			return false;
+	},
+	toggleAll : function() { toDoList.toggleAll();
+			view.displayList();		
+			return false;
+	},
 }
 
 var view = {
@@ -87,16 +98,18 @@ var view = {
 			var todoUl = document.querySelector('ul');
 			todoUl.innerHTML = '';
 		for (var i = 0; i < toDoList.list.length; i++) {
-		var todoLi = document.creatElement('li');
+		var todoLi = document.createElement('li');
+			todoLi.className = "inputs";	
 		var liss = toDoList.list[i];		
 		var itemCompletion = '';
-		if ( list.isCompleted === true ) {
-		itemCompletion = '-x-' + liss.itemName;
+		if ( liss.isCompleted === true ) {
+		itemCompletion = '-x-';
 		}
 		else {
-		itemCompletion = '- -' + liss.itemName;
+		itemCompletion = '- -';
 		}
-				todoLi.textContent = toDoList.list[i].itemName;
+		todoLi.textContent = toDoList.list[i].itemName + " " + itemCompletion;
 		todoUl.appendChild(todoLi);					
+}
 }
 }
