@@ -10,33 +10,38 @@
 				<div class="container">
 				<header class"name">
 						<h1 id="heading">tasks</h1>
-						<form>
-								<div class="inputs">
-								<button id="listAdd" onclick="handler.addItem()" type="button">Add Item</button>
+						<div> 
+								<form onsubmit="return handler.addItem()" class="inputs">
+								<button id="listAdd" onsubmit=" return handler.addItem() " type="button">Add Item</button>
 								<input id="add" type="text" placeholder="add a new list item">
-								</div>
+								</form>
 
-								<div class="inputs">
-								<button id="listRemove" onclick="handler.deleteItem()">Remove Item</button>
+								<form onsubmit=" return handler.deleteItem()" class="inputs">
+								<button id="listRemove" onsubmit=" return handler.deleteItem()">Remove Item</button>
 								<input id="deletePosition" type="number" placeholder='Item #'>
-								</div>
+								</form>
 
-								<div class="inputs">
-								<button id="listChange" onclick="handler.changeItem()">Change Item</button>
+								<form onsubmit=" return handler.changeItem()" class="inputs">
+								<button id="listChange" onsubmit=" return handler.changeItem()">Change Item</button>
 								<input id="changePosition" type="number" placeholder='Item #'>
 								<input id="nameChange" type="text" placeholder="change an item here">
-								</div>
+								</form>
 								
-								<div class="inputs">
-								<button id="toggleAll" onclick="handler.toggleAll()">Toggle All</button>
-								<input id="toggleAllPosition" type="number" placeholder="Item #">		
-								</div>
+								<form onsubmit=" return handler.toggleCompleted()" class="inputs">
+								<button id="toggleCompleted" onsubmit=" return handler.toggleCompleted()">Toggle Items Completed</button>
+								<input id="toggleCompletedPosition" type="number" placeholder="Item #">		
+								</form>
 
-						</form>
+								<form class="inputs">
+								<button id="toggleAll" onsubmit=" return handler.toggleAll()">Toggle All Items</button>
+								</form>
+
+
+						</div>
 				</header>
 				</div>
 					<div class="viewing">
-							<ul><li></li> </ul>
+							<ul></ul>
 				</div>
 
 						<div class="details">	
@@ -64,4 +69,3 @@
 
 
 </html>
-
