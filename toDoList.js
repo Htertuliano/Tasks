@@ -1,3 +1,5 @@
+vim: syntax=js
+
 var toDoList = {
 		list: [],
 		displayList: function() {
