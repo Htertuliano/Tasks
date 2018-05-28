@@ -1,2 +1,2 @@
 # tasksApp
-a simple to do list applicatoin
+a simple to do list application
